@@ -1,6 +1,8 @@
 import src.Departamento;
 import src.Empresa;
 import src.Funcionario;
+import src.FuncionarioTempoIntegral;
+import src.FuncionarioTempoParcial;
 
 public class App {
     public static void main(String[] args) {
@@ -11,12 +13,12 @@ public class App {
         Departamento vendas =   new Departamento("Vendas");
         Departamento ti =       new Departamento("Tecnologia da Informação");
         
-        Funcionario joao =      new Funcionario(1, "João Victor Morais", 1212.0f);
-        Funcionario talles =    new Funcionario(2, "Talles Cavalleiro", 1212.0f);
-        Funcionario bruno =     new Funcionario(3, "Bruno Santos", 1212.0f);
-        Funcionario celso =     new Funcionario(4, "Celso Nantes", 1212.0f);
-        Funcionario thiago =    new Funcionario(5, "Thiago Lahass", 1212.0f);
-        Funcionario gabriel =   new Funcionario(6, "Gabriel Gatti", 1212.0f);
+        Funcionario joao =      new FuncionarioTempoIntegral(1, "João Victor Morais", 1212.0f);
+        Funcionario talles =    new FuncionarioTempoIntegral(2, "Talles Cavalleiro", 1212.0f);
+        Funcionario bruno =     new FuncionarioTempoIntegral(3, "Bruno Santos", 1212.0f);
+        Funcionario celso =     new FuncionarioTempoParcial(4, "Celso Nantes", 1212.0f);
+        Funcionario thiago =    new FuncionarioTempoIntegral(5, "Thiago Lahass", 1212.0f);
+        Funcionario gabriel =   new FuncionarioTempoIntegral(6, "Gabriel Gatti", 1212.0f);
 
         rh.addFuncionario(celso);
 
